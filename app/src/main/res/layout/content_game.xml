@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".GameActivity"
+    tools:showIn="@layout/activity_game">
+
+    <LinearLayout
+        android:id="@+id/GameScene"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="325dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GameScene">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/alphaA"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_A"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha1" />
+
+            <ImageButton
+                android:id="@+id/alphaB"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_B"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha2" />
+
+            <ImageButton
+                android:id="@+id/alphaC"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_C"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha3" />
+
+            <ImageButton
+                android:id="@+id/alphaD"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_D"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha4" />
+
+            <ImageButton
+                android:id="@+id/alphaE"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_E"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha5" />
+
+            <ImageButton
+                android:id="@+id/alphaF"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_F"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha6" />
+
+            <ImageButton
+                android:id="@+id/alphaG"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_G"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha7" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/alphaH"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_H"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha8" />
+
+            <ImageButton
+                android:id="@+id/alphaI"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_I"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha9" />
+
+            <ImageButton
+                android:id="@+id/alphaJ"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_J"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha10" />
+
+            <ImageButton
+                android:id="@+id/alphaK"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_K"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha11" />
+
+            <ImageButton
+                android:id="@+id/alphaL"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_L"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha12" />
+
+            <ImageButton
+                android:id="@+id/alphaM"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_M"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha13" />
+
+            <ImageButton
+                android:id="@+id/alphaN"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_N"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha14" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/alphaO"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_O"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha15" />
+
+            <ImageButton
+                android:id="@+id/alphaP"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_P"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha16" />
+
+            <ImageButton
+                android:id="@+id/alphaQ"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_Q"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha17" />
+
+            <ImageButton
+                android:id="@+id/alphaR"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_R"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha18" />
+
+            <ImageButton
+                android:id="@+id/alphaS"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_S"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha19" />
+
+            <ImageButton
+                android:id="@+id/alphaT"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_T"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha20" />
+
+            <ImageButton
+                android:id="@+id/alphaU"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_U"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha21" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/alphaV"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_V"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha22" />
+
+            <ImageButton
+                android:id="@+id/alphaW"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_W"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha23" />
+
+            <ImageButton
+                android:id="@+id/alphaX"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_X"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha24" />
+
+            <ImageButton
+                android:id="@+id/alphaY"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_Y"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha25" />
+
+            <ImageButton
+                android:id="@+id/alphaZ"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_Z"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha26" />
+
+            <ImageButton
+                android:id="@+id/alphaQuestion"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_Question"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha27" />
+
+            <ImageButton
+                android:id="@+id/alphaExclamation"
+                android:layout_width="@dimen/letter_width"
+                android:layout_height="@dimen/letter_height"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_Exclamation"
+                android:scaleType="fitCenter"
+                android:scaleX="@dimen/letter_scale_x"
+                android:scaleY="@dimen/letter_scale_y"
+                app:srcCompat="@drawable/alpha28" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
