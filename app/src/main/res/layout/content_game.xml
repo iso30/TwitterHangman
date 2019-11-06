@@ -8,25 +8,58 @@
     tools:context=".GameActivity"
     tools:showIn="@layout/activity_game">
 
-    <LinearLayout
-        android:id="@+id/GameScene"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/RightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="50dp" />
 
-    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/TopGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="50dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/LeftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="50dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/TableTopGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="350dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="57dp"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:contentDescription="underScore field"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/AlphaTable"
+        app:layout_constraintStart_toStartOf="@id/LeftGuideline"
+        app:srcCompat="@drawable/underscore" />
 
     <TableLayout
-        android:layout_width="0dp"
-        android:layout_height="325dp"
+        android:id="@+id/AlphaTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/GameScene">
+        app:layout_constraintTop_toBottomOf="@id/TableTopGuideline">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:id="@+id/AlphaRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/alphaA"
@@ -107,8 +140,9 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:id="@+id/AlphaRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/alphaH"
@@ -189,8 +223,9 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:id="@+id/AlphaRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/alphaO"
@@ -271,8 +306,9 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:id="@+id/AlphaRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/alphaV"
