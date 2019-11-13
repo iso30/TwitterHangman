@@ -14,7 +14,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
-        android:id="@+id/include"
+        android:id="@+id/include_activity_game"
         layout="@layout/content_game" />
 
     <androidx.appcompat.widget.Toolbar

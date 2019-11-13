@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/imageButtonClone"
+    android:layout_width="57dp"
+    android:layout_height="65dp"
+    android:layout_weight="1"
+    android:adjustViewBounds="true"
+    android:contentDescription="underScore field"
+    android:scaleType="fitXY"
+    app:srcCompat="@drawable/underscore" />
