@@ -10,11 +10,29 @@
     tools:showIn="@layout/activity_game">
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/UnderScoreTopGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="250dp" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/RightGuideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="50dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tempPrompt"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/UnderScoreTopGuideLine"
+        app:layout_constraintLeft_toRightOf="@id/LeftGuideline"
+        app:layout_constraintRight_toLeftOf="@id/RightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/TopGuideline" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/TopGuideline"
@@ -22,7 +40,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:visibility="visible"
-        app:layout_constraintGuide_begin="@dimen/game_side_border"
+        app:layout_constraintGuide_begin="55dp"
         tools:visibility="visible" />
 
     <androidx.constraintlayout.widget.Guideline

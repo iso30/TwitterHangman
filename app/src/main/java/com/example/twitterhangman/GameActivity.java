@@ -9,6 +9,7 @@ import android.graphics.Point;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Debug;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
@@ -50,7 +51,7 @@ public class GameActivity extends AppCompatActivity {
         setAlphaArray();
 
         // TODO - hardcoded need to pass in depending on word length
-        int NUM_UNDERSCORES = 5;
+        int NUM_UNDERSCORES = 6;
         gameConstraintSet = new ConstraintSet();
         gameConstraintLayout = (ConstraintLayout) findViewById(R.id.include_activity_game);
 
@@ -69,6 +70,13 @@ public class GameActivity extends AppCompatActivity {
             setUnderscoreParams(underscoreInd,gameWindowWidth / NUM_UNDERSCORES, gameWindowWidth / (NUM_UNDERSCORES - 1));
             gameConstraintLayout.addView(aUnderscoreView[underscoreInd]);
         }
+        // TODO - hard coded temp code
+        aUnderscoreView[0].setTag("E");
+        aUnderscoreView[1].setTag("X");
+        aUnderscoreView[2].setTag("O");
+        aUnderscoreView[3].setTag("D");
+        aUnderscoreView[4].setTag("I");
+        aUnderscoreView[5].setTag("A");
 
         // Set underscore view relative layout
         gameConstraintSet.clone(gameConstraintLayout);
@@ -130,7 +138,9 @@ public class GameActivity extends AppCompatActivity {
         for (int i = Alphabet.A.ordinal(); i < Alphabet.Qu.ordinal(); ++i)
         {
             aAlphaView[i].setOnTouchListener(new MyTouchListener());
+            aAlphaView[i].setTag(Alphabet.values()[i]);
         }
+        Log.d("LOG", aAlphaView[3].getTag().toString());
     }
 
     // Drag class
@@ -173,8 +183,11 @@ public class GameActivity extends AppCompatActivity {
                 case DragEvent.ACTION_DROP:
                     // Dropped, reassign View to ViewGroup
                     View view = (View) event.getLocalState();
-                    Drawable img = ((ImageView) view).getDrawable();
-                    ((ImageView) v).setImageDrawable(img);
+                    if (v.getTag().toString().equals(view.getTag().toString()))
+                    {
+                        Drawable img = ((ImageView) view).getDrawable();
+                        ((ImageView) v).setImageDrawable(img);
+                    }
                     break;
                 case DragEvent.ACTION_DRAG_ENDED:
                     //v.setBackgroundDrawable(normalShape);

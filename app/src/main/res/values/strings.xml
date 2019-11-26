@@ -31,4 +31,5 @@
     <string name="image_Z">The letter Z</string>
     <string name="image_Question">The question mark</string>
     <string name="image_Exclamation">The exclamation mark</string>
+    <string name="tempPrompt">I summon _____ the forbitten one</string>
 </resources>
