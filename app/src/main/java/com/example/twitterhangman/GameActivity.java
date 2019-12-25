@@ -38,6 +38,8 @@ public class GameActivity extends AppCompatActivity {
     {
         A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, Ex, Qu
     }
+    private int gameWindowWidth;
+    private int gameWindowHeight;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +61,9 @@ public class GameActivity extends AppCompatActivity {
         Display display = getWindowManager().getDefaultDisplay();
         DisplayMetrics outMetrics = new DisplayMetrics ();
         display.getMetrics(outMetrics);
-        int gameWindowWidth = outMetrics.widthPixels - (getResources().getDimensionPixelSize(R.dimen.game_side_border) * 2);
+        gameWindowWidth = outMetrics.widthPixels;
+        gameWindowHeight = outMetrics.heightPixels;
+        int widthWithMargins = outMetrics.widthPixels - (getResources().getDimensionPixelSize(R.dimen.game_side_border) * 2);
 
         // Duplicate underscore views and index them
         aUnderscoreView = new ImageView[NUM_UNDERSCORES];
@@ -67,7 +71,7 @@ public class GameActivity extends AppCompatActivity {
         for (int underscoreInd = 0; underscoreInd < NUM_UNDERSCORES; ++underscoreInd)
         {
             aUnderscoreView[underscoreInd] = (ImageView) inflater.inflate(R.layout.duplicatable, null);
-            setUnderscoreParams(underscoreInd,gameWindowWidth / NUM_UNDERSCORES, gameWindowWidth / (NUM_UNDERSCORES - 1));
+            setUnderscoreParams(underscoreInd,widthWithMargins / NUM_UNDERSCORES, widthWithMargins / (NUM_UNDERSCORES - 1));
             gameConstraintLayout.addView(aUnderscoreView[underscoreInd]);
         }
         // TODO - hard coded temp code
@@ -135,10 +139,15 @@ public class GameActivity extends AppCompatActivity {
         aAlphaView[26] = findViewById(R.id.alphaExclamation);
         aAlphaView[27] = findViewById(R.id.alphaQuestion);
 
-        for (int i = Alphabet.A.ordinal(); i < Alphabet.Qu.ordinal(); ++i)
+        int boardHeight = gameWindowHeight / 2;
+        int rowHeight = boardHeight ;
+        for (int i = Alphabet.A.ordinal(); i <= Alphabet.Qu.ordinal(); ++i)
         {
             aAlphaView[i].setOnTouchListener(new MyTouchListener());
             aAlphaView[i].setTag(Alphabet.values()[i]);
+            /*0330aAlphaView[i].getLayoutParams().height = rowHeight;
+
+            aAlphaView[i].getLayoutParams().width = rowHeight;*/
         }
         Log.d("LOG", aAlphaView[3].getTag().toString());
     }

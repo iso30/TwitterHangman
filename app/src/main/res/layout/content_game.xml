@@ -59,16 +59,20 @@
         app:layout_constraintGuide_begin="350dp" />
 
     <TableLayout
+
+        android:shrinkColumns="*"
         android:id="@+id/AlphaTable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TableTopGuideline">
+        app:layout_constraintTop_toBottomOf="@id/TableTopGuideline"
+        android:weightSum="20">
 
         <TableRow
             android:id="@+id/AlphaRow1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
 
             <ImageButton
                 android:id="@+id/alphaA"
@@ -151,7 +155,8 @@
         <TableRow
             android:id="@+id/AlphaRow2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
 
             <ImageButton
                 android:id="@+id/alphaH"
@@ -234,7 +239,8 @@
         <TableRow
             android:id="@+id/AlphaRow3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
 
             <ImageButton
                 android:id="@+id/alphaO"
@@ -317,7 +323,8 @@
         <TableRow
             android:id="@+id/AlphaRow4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
 
             <ImageButton
                 android:id="@+id/alphaV"

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TwitterHangman</string>
+    <string name="action_settings">Settings</string>
+    <string name="play_button">Play</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="image_A">The letter A</string>
+    <string name="image_B">The letter B</string>
+    <string name="image_C">The letter C</string>
+    <string name="image_D">The letter D</string>
+    <string name="image_E">The letter E</string>
+    <string name="image_F">The letter F</string>
+    <string name="image_G">The letter G</string>
+    <string name="image_H">The letter H</string>
+    <string name="image_I">The letter I</string>
+    <string name="image_J">The letter J</string>
+    <string name="image_K">The letter K</string>
+    <string name="image_L">The letter L</string>
+    <string name="image_M">The letter M</string>
+    <string name="image_N">The letter N</string>
+    <string name="image_O">The letter O</string>
+    <string name="image_P">The letter P</string>
+    <string name="image_Q">The letter Q</string>
+    <string name="image_R">The letter R</string>
+    <string name="image_S">The letter S</string>
+    <string name="image_T">The letter T</string>
+    <string name="image_U">The letter U</string>
+    <string name="image_V">The letter V</string>
+    <string name="image_W">The letter W</string>
+    <string name="image_X">The letter X</string>
+    <string name="image_Y">The letter Y</string>
+    <string name="image_Z">The letter Z</string>
+    <string name="image_Question">The question mark</string>
+    <string name="image_Exclamation">The exclamation mark</string>
+    <string name="tempPrompt">I summon _____ the forbitten one</string>
+</resources>

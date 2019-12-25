@@ -3,6 +3,6 @@
     <dimen name="letter_scale_x">1</dimen>
     <dimen name="letter_scale_y">1</dimen>
     <dimen name="letter_width">60dp</dimen>
-    <dimen name="letter_height">60dp</dimen>
+    <dimen name="letter_height">40dp</dimen>
     <dimen name="game_side_border">50dp</dimen>
 </resources>
